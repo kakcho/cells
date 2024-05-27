@@ -68,7 +68,7 @@ function Content() {
         pinch={{ step: 5 }}
         pan={{disabled:true}}
         doubleClick={{disabled: true, disableOnTarget: "[input]"}}>
-            <TransformComponent wrapperClass="w-600 h-600 max-sm:w-450 max-sm:h-450 mt-10vh border-solid border-cyan-700 border-4 border-solid relative" >
+            <TransformComponent wrapperClass="w-600 h-600 max-sm:w-450 max-sm:h-450 mt-15 border-solid border-cyan-700 border-4 border-solid relative" >
               <Grid className="z-40" onStop={onStop} setIsMoveable={setIsMoveable} />
             </TransformComponent>
             <Controls/>
