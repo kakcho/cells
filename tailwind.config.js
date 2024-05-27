@@ -26,7 +26,7 @@ export default {
       },
       margin: {
         '55': '-500px',
-        '15': '15vh',
+        '15': '100px',
       },
       minHeight: {
         '100': '9.5vh',
