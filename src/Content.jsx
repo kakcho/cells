@@ -29,7 +29,7 @@ function Content() {
 
   }
   return (
-    <div className="h-screen flex justify-center w-screen ">
+    <div className="h-screen flex justify-center w-screen content-center  ">
       {!cellActive && (
         <div className="flex flex-col place-content-center justify-center ">
           <h1 className="text-3xl font-bold text-slate-950 ">
@@ -68,9 +68,10 @@ function Content() {
         pinch={{ step: 5 }}
         pan={{disabled:true}}
         doubleClick={{disabled: true, disableOnTarget: "[input]"}}>
-            <TransformComponent wrapperClass="w-600 h-600 max-sm:w-450 max-sm:h-450 mt-15 border-solid border-cyan-700 border-4 border-solid relative" >
+          <div className=" place-content-center justify-center">
+            <TransformComponent wrapperClass="border-solid border-cyan-700 border-4 " >
               <Grid className="z-40" onStop={onStop} setIsMoveable={setIsMoveable} />
-            </TransformComponent>
+            </TransformComponent></div>
             <Controls/>
           </TransformWrapper>)}
           {/* <Help/> */}
